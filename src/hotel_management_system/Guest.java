@@ -10,17 +10,14 @@ import java.util.ArrayList;
  *
  * @author gamer
  */
-public class Guest{
+public class Guest extends User{
     private String GuestID;
+    private User Guest;
     private ArrayList<User> Visitor;
     private ArrayList<String> Notification;
 
 
-    public Guest() {
-        this.GuestID = "";
-        this.Visitor = new ArrayList<User>();
-        this.Notification = new ArrayList<String>();
-    }
+   
     
     
     public String getGuestID() {
@@ -31,6 +28,25 @@ public class Guest{
         this.GuestID = GuestID;
     }
 
+    public User getGuest() {
+        return Guest;
+    }
+
+    public void setGuest(User Guest) {
+        this.Guest = Guest;
+    }
+
+    public void setGuest(String name, String userName, String password, String email, String phoneNumber, String DOB, String Address) {
+        this.Guest.setName(name);
+        this.Guest.setPassword(password);
+        this.Guest.setAddress(Address);
+        this.Guest.setEmail(email);
+        this.Guest.setUserName(userName);
+        this.Guest.setDOB(DOB);
+        this.Guest.setPhoneNumber(phoneNumber);
+    }
+        
+    
     public ArrayList<User> getVisitor() {
         return Visitor;
     }
