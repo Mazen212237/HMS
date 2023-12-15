@@ -22,6 +22,7 @@ class Booking {
     //date format is year,month,day
     String startDate;
     String endDate;
+
     
     Double totalPrice;
 
@@ -59,9 +60,12 @@ class Booking {
         
         return Price;
     }
-    
-    
-    
-    
+
+     // Decorate the booking with a spa and add the cost to the total
+    public void addSpa() {
+        // Create a SpaDecorator instance and use it to decorate the booking
+        BookingDecorator spaDecorator = new SpaDecorator();
+        totalPrice = spaDecorator.decorateBooking(totalPrice);
+    } 
     
 }
