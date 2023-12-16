@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 
 public interface KitchenInterface {
     void setFood(String foodName, String foodDesc, int price);

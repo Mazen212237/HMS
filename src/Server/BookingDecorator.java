@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 
 interface BookingDecorator {
     Double decorateBooking(Double currentTotal);

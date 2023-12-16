@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 
 // Concrete decorator class for adding spa to the booking
 class SpaDecorator implements BookingDecorator {

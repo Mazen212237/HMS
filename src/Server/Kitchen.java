@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 import java.util.ArrayList;
 import java.util.List;
 

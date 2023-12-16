@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 
 public class Food {
     private String foodName;

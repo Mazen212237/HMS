@@ -1,4 +1,4 @@
-package hotel_management_system;
+package Server;
 
 public interface Observer {
     void update(String notification);
