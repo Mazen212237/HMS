@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/hotel_management_system/DB.java</file>
-            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/hotel_management_system/Guest.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/Server/DB.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/Server/Guest.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/Server/Booking.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/Server/Login.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/Server/Receptionist.java</file>
+            <file>file:/C:/Users/gamer/Documents/NetBeansProjects/Hotel_Management_System/src/RMI/LoginInterface.java</file>
         </group>
     </open-files>
 </project-private>
