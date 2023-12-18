@@ -22,10 +22,8 @@ public class Guest extends User implements Observer{
         this.Visitor=new ArrayList<User>();
         this.notification=new ArrayList<String>();
         
-        String col="Guest"; 
-        DB db= new DB(col);
-        db.insertGuest(name, userName, password, email, phoneNumber, DOB, Address);
-        System.out.println("Created Guest Object and Inserted to DB");
+
+        System.out.println("Created Guest Object");
     }
 
     public Guest() {
@@ -33,11 +31,8 @@ public class Guest extends User implements Observer{
         this.GuestID=UUID.randomUUID().toString();
         this.Visitor=new ArrayList<User>();
         this.notification=new ArrayList<String>();
-        
-        String col="Guest"; 
-        DB db= new DB(col);
-        db.insertGuest(this.getName(), this.getUserName(), this.getPassword(), this.getEmail(), this.getPhoneNumber(), this.getDOB(), this.getAddress());
-        System.out.println("Created Guest Object and Inserted to DB");
+
+        System.out.println("Created Guest Object");
     }
     
 
