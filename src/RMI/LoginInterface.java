@@ -12,6 +12,6 @@ import java.rmi.RemoteException;
  * @author gamer
  */
 public interface LoginInterface extends Remote{
-    String Login(String username) throws RemoteException;
+    String Login(String username, String password) throws RemoteException;
     void Signup(String name, String userName, String password, String email, String phoneNumber, String DOB, String Address) throws RemoteException;
 }

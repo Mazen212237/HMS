@@ -35,7 +35,7 @@ public class Kitchen implements KitchenInterface {
     
     @Override
     public void makeOrder(String foodName, int quantity, Guest guest) {
-        notifyGuests("New order: " + quantity + " x " + foodName + " for guest " + guest.getGuestID());
+        notifyGuests("New order: " + quantity + " x " + foodName + " for guest " + guest.get_id());
     }
 
     @Override

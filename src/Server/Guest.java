@@ -6,19 +6,19 @@ package Server;
 
 import java.util.ArrayList;
 import java.util.UUID;
+import org.bson.types.ObjectId;
 
 /**
  *
  * @author gamer
  */
 public class Guest extends User implements Observer{
-    private String GuestID;
+    private ObjectId _id;
     private ArrayList<User> Visitor;
     private ArrayList<String> notification;
 
     public Guest(String name, String userName, String password, String email, String phoneNumber, String DOB, String Address) {
         super(name, userName, password, email, phoneNumber, DOB, Address);
-        this.GuestID=UUID.randomUUID().toString();
         this.Visitor=new ArrayList<User>();
         this.notification=new ArrayList<String>();
         
@@ -28,7 +28,6 @@ public class Guest extends User implements Observer{
 
     public Guest() {
         super();
-        this.GuestID=UUID.randomUUID().toString();
         this.Visitor=new ArrayList<User>();
         this.notification=new ArrayList<String>();
 
@@ -40,9 +39,7 @@ public class Guest extends User implements Observer{
    
     
     
-    public String getGuestID() {
-        return GuestID;
-    }
+
 
     public ArrayList<String> getNotification() {
         return notification;
@@ -56,17 +53,14 @@ public class Guest extends User implements Observer{
     
     //return bool if managed to remove or not
     public boolean removeNotification(Integer index){
-        boolean remove = this.notification.remove(index);
-        return remove;
+        return this.notification.remove(index);
     }
-    
 
 
+    public ObjectId get_id() {
+        return _id;
+    }
 
-
-
-        
-    
     public ArrayList<User> getVisitor() {
         return Visitor;
     }
@@ -83,7 +77,7 @@ public class Guest extends User implements Observer{
 
     public void update(String notification) {
        
-        System.out.println("Guest " + GuestID + " received update: " + notification);
+        System.out.println("Guest " + _id + " received update: " + notification);
     }
     
     

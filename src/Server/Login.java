@@ -19,8 +19,32 @@ public class Login extends UnicastRemoteObject implements LoginInterface {
     }
 
     @Override
-    public String Login(String username) throws RemoteException {
-        return null;
+    public String Login(String username, String password) throws RemoteException {
+        DB db= new DB();
+        String guest="Guest";
+        String Rec="Receptionist";
+        String Admin="Admin";
+
+        String message=db.LoginGuest(username, password);
+        if(message==null){
+            message=db.LoginReceptionist(username,password);
+            if(message==null){
+                message= db.LoginAdmin(username, password);
+                if (message==null){
+                    return null;
+                }
+                else {
+                    return message;
+                }
+            }
+            else{
+                return message;
+            }
+        }
+        else {
+            return message;
+        }
+
     }
 
     @Override
