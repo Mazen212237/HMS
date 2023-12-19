@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package hotel_management_system;
+package Server;
 
 import java.lang.Integer;
 import java.lang.String;
@@ -10,7 +10,7 @@ import java.lang.String;
  *
  * @author gamer
  */
-class Room {
+public class Room {
     String roomID;
     String statusRoom;
     String type;
