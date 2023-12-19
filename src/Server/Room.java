@@ -3,14 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Server;
-
-import java.lang.Integer;
-import java.lang.String;
 /**
  *
  * @author gamer
  */
-class Room {
+public class Room {
     String roomID;
     String statusRoom;
     String type;
@@ -37,6 +34,7 @@ class Room {
         this.Description = "";
         this.Price = 0.0;
     }
+    
 
     public String getRoomID() {
         return roomID;
